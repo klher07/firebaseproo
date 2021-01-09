@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <title>Hello World</title>
+        <style>
+            .contenedor_movil {
+                display:hidden;
+                }
+            @media only screen and (max-width: 800px) {
+                .img-circle {
+                border-radius: 11%;
+                display: block;
+                height: auto;
+                max-width: 63%;
+                left: 84px;
+                position: relative;
+                }
+                .contenedor_movil{
+                    display: block;
+                }
+                 .contenedor_web{
+                    display: none;
+                }
+            }
+
+            @media only screen and (min-width: 800px) {
+                .img-circle {
+                border-radius: 11%;
+                display: block;
+                height: auto;
+                max-width: 53%;
+                left: 100px;
+                position: relative;
+                }
+                .img-thumbnail{
+                        max-width: 22%;
+                        width: 228px;
+                        height: 204px;
+                        left: 273px;
+                        position: relative
+                }
+                .contenedor_movil{
+                    display: none;
+                }
+                 .contenedor_web{
+                    display: block;
+                }
+            }
+         </style>   
+    </head>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      <div class="contenedor_web">  
+        <a href="https://www.ticketfacil.ec/ticket2developer/ticket"><img src="https://www.ticketfacil.ec/img_B/15621011611558994606155026671015448460961532989648ticketfacilnegro.png" class="img-thumbnail" alt="prueba"></a>
+        <a href="https://www.partes365.com/"><img src="https://www.partes365.com/partes365/view/img/logo.png" class="img-thumbnail" alt="..."></a>
+        <a href="https://www.desdecasa.ec/desdecasaDeveloper"><img src="https://desdecasa.ec/uploads/1599708929desdecasafinal.png" class="img-thumbnail" alt="..."></a>
+        <!--<a href="https://www.practi.cash/"><img src="https://desdecasa.ec/uploads/1599708929desdecasafinal.png" class="img-thumbnail" alt="..."></a>-->
+      </div>
+    <div class='row contenedor_movil'>
+      <div class='col-md-4'>
+        <a href="#" id="openlink1" onclick="enviarUrl('https://www.ticketfacil.ec/ticket2developer/ticket')">
+        <img target="_blank" class='img-circle text-center' src='https://www.ticketfacil.ec/img_B/15621011611558994606155026671015448460961532989648ticketfacilnegro.png' /></a>
+      </div>
+        <br>
+        <br>
+      <div class='col-md-4'>
+        <a href="#" id="openlink1" onclick="enviarUrl('https://www.desdecasa.ec/desdecasaDeveloper')">
+        <img class='img-circle text-center' src='https://desdecasa.ec/uploads/1599708929desdecasafinal.png' /></a>
+      </div>
+        <br>
+        <br>
+      <div class='col-md-4'>
+        <a href="#" id="openlink1" onclick="enviarUrl('https://www.partes365.com/')">
+        <img class='img-circle text-center' src='https://www.partes365.com/partes365/view/img/logo.png' /></a>
+      </div>
+    </div>
+    <!--<div class="app">
+        <input type="url" placeholder="enter url" id="url">
+        <button id="openlink">Open</button>
+    </div>-->
+        <script src="cordova.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
+</html>
